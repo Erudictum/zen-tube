@@ -1,0 +1,29 @@
+.list-videos-wrapper {
+    max-width: 70vw;
+    min-height: 15vh;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-top: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    position: relative;
+}
+
+@media (min-width: 1850px) {
+    .list-videos-wrapper {
+        max-width: 70vw;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .list-videos-wrapper {
+        justify-content: center;
+    }
+}

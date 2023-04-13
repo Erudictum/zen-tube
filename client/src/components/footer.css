@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+.social-icons {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: .9;
+}
+
+i:hover {
+    color: rgba(244, 123, 86, 1);
+    cursor: pointer;
+}
+
+.line {
+    background-color: rgba(255, 255, 255, .5);
+    width: 150px;
+    height: 1px;
+    margin-top: 5px;
+}
+
+h5 {
+    font-family: var(--font2);
+    opacity: .7;
+    margin: .2rem 0 0 0;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: var(--font1);
+    opacity: .7;
+    font-weight: 200;
+    margin: -.5rem 0 2rem 0;
+    font-size: .5rem;
+}

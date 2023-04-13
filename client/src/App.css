@@ -1,0 +1,16 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(./images/background-image2.jpg);
+  --font1: 'League Spartan', sans-serif;
+  --font2: 'Ubuntu', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.App{
+  width: 100vw;
+  min-height: 100%;
+}

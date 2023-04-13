@@ -1,0 +1,118 @@
+.list-video-wrapper {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    width: 290px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.img-wrapper {
+    width: 270px;
+    height: 150px;
+    margin-top: 12px;
+}
+
+.list-video-wrapper>img {
+    user-select: none;
+}
+
+.list-video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all ease-in-out .2s;
+}
+
+.list-video-wrapper:hover {
+    transform: scale(102%);
+}
+
+.info-btn {
+    margin-bottom: 7px;
+    font-size: 1.5rem;
+    font-family: var(--font1);
+    opacity: .5;
+    user-select: none;
+    transform: translateY(-7%);
+    padding: 0 10px;
+}
+
+.info-btn:hover {
+    opacity: 1;
+}
+
+.info-modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 290px;
+    height: 190px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.info-modal h1 {
+    font-size: 1.1rem;
+    font-family: var(--font1);
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: white;
+    padding: 0rem .7rem;
+    margin-top: 2rem;
+}
+
+.info-modal h2 {
+    font-size: .63rem;
+    font-family: var(--font2);
+    font-weight: 500;
+    opacity: .5;
+    margin-top: -1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    user-select: none;
+}
+
+@media (min-width: 1850px) {
+    .list-video-wrapper {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+        width: 400px;
+        height: 270px;
+    }
+
+    .img-wrapper {
+        width: 370px;
+        height: 208px;
+        margin-top: 7px;
+    }
+
+    .info-btn {
+        font-size: 2.3rem;
+        transform: translateY(10%);
+    }
+
+    .info-modal {
+        width: 400px;
+        height: 270px;
+    }
+
+    .info-modal h1 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+        padding: 0rem 1rem;
+        margin-top: 5rem;
+    }
+
+    .info-modal h2 {
+        font-size: .8rem;
+        font-family: var(--font2);
+        font-weight: 500;
+        opacity: .7;
+    }
+}

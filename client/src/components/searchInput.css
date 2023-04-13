@@ -1,0 +1,80 @@
+.search-wrapper {
+    margin-top: 40vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+
+.logo-wrapper {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img {
+    width: 110px;
+    opacity: .9;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .3);
+}
+
+input {
+    max-width: 20rem;
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, .1);
+    border: 0px solid rgba(255, 255, 255, .3);
+    padding: 0rem 4rem 0rem 2rem;
+    color: azure;
+    outline-style: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-family: var(--font1);
+    transform: translateX(-8.5%);
+}
+
+button {
+    transform: translateX(-150%);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: -55px;
+}
+
+.icon-glass {
+    color: azure;
+}
+
+.icon-glass:hover {
+    color: rgba(244, 123, 86, 1);
+}
+
+@media (max-width: 430px) {
+    .search-wrapper {
+        margin-top: 35vh;
+    }
+
+    input {
+        width: 50vw;
+    }
+}
