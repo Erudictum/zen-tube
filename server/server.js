@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 const API_KEY = process.env.API_KEY_ENV
-const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&type=video&part=snippet&videoEmbeddable=true&maxResults=6&q=`
+const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&type=video&part=snippet&videoEmbeddable=true&maxResults=6&regionCode=BR&q=`
 
 app.get('/', (req, res) => {
     fetch(`${API_URL}${req.query.term}`)
