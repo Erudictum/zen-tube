@@ -3,14 +3,13 @@ import { SearchContextProvider } from "../contexts/SearchContext";
 import './searchInput.css';
 import logo from '../images/logo.png';
 
-
 export const SearchInput = () => {
 
     const { setListVideos, setClickedVideo } = useContext(SearchContextProvider);
     const [searchTerm, setSearchTerm] = useState('');
     const [marginDiv, setMarginDiv] = useState('');
 
-    const FETCH_URL = `http://localhost:3000?term=${searchTerm}`
+    const FETCH_URL = `https://zen-tube.onrender.com?term=${searchTerm}`
 
     const handleSearch = async (event) => {
         event.preventDefault();
