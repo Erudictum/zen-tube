@@ -12,6 +12,7 @@
     position: relative;
 }
 
+
 @media (min-width: 1850px) {
     .list-videos-wrapper {
         max-width: 70vw;
@@ -20,6 +21,14 @@
         column-gap: 3rem;
         row-gap: 5rem;
     }
+}
+
+@media (max-width: 1000px){
+    .list-videos-wrapper{
+        max-width: 90vw;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
 }
 
 @media (max-width: 430px) {
