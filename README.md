@@ -8,7 +8,7 @@
 
 <!-- >Site no ar: &nbsp; https://zen-tube.vercel.app -->
 
->Site no ar: <a href="https://zen-tube.vercel.app" target="_blank">&nbsp; https://zen-tube.vercel.app</a>
+>Site no ar: <a href="https://zen-tube.vercel.app" target="_blank">Link</a>
 
 Obs.: Apenas a **primeira busca** poderá levar cerca de 45 segundos para responder. É um limite da hospedagem gratuita, que impõe esse atraso para tirar o servidor do _standby_.
 
